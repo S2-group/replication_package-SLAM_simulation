@@ -11,8 +11,8 @@ import csv
 def resource_writer():
     #retrieve time for filename
     now = str(time.time())
-    #create filename
-    path = '/home/parallels/Robot_Data/resources-' + now + '.csv'
+    #create filename (use full path)
+    path = '/home/[username]/Robot_Data/resources-' + now + '.csv'
     #open csvfile
     with open(path, 'w', newline='', encoding='utf-8') as csvfile:
         rospy.init_node('resource_writer', anonymous=True)

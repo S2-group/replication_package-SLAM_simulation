@@ -25,7 +25,7 @@ var2= MISSION_TIME
 
 def recordPower():
     # subprocess.call("~/catkin_ws/src/s2_slam/src/record_power.sh", shell=True)
-    os.system("sudo /home/parallels/catkin_ws/src/s2_slam_sim/src/record_power.sh {} {}".format(var1, var2))
+    os.system("sudo /home/[username]/catkin_ws/src/s2_slam_sim/src/record_power.sh {} {}".format(var1, var2))
 
 if __name__ == "__main__":
     rospy.init_node("power_recorder")
