@@ -69,8 +69,11 @@ Remote PC:
 
 For testing purposes:
 Change the values in /catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_arena.launch:
-<arg name="gui" value="true"/>
-<arg name="headless" value="false"/>
+
+```bash
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+```
 
 Open new terminal and run this command to see the arena and TurttleBOT3: <br/>
 
@@ -79,8 +82,11 @@ $ roslaunch turtlebot3_gazebo turtlebot3_arena.launch
 ```
 
 When done testing, change it back to
-<arg name="gui" value=“false”/>
-<arg name="headless" value=“true”/>
+
+```bash
+    <arg name="gui" value=“false”/>
+    <arg name="headless" value=“true”/>
+```
 
 First you need to source ROS on the remote PC to run roscore: <br/>
 
